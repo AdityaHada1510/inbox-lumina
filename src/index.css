@@ -18,6 +18,10 @@
     --card-glass: 0 0% 100% / 0.08;
     --card-glass-heavy: 0 0% 100% / 0.12;
 
+    /* Popup/Dropdown solid backgrounds for readability */
+    --popover: 224 24% 8%;
+    --popover-foreground: 0 0% 100%;
+
     /* Enhanced Sidebar Dark Theme with glass effect */
     --sidebar-background: 0 0% 100% / 0.06;
     --sidebar-foreground: 0 0% 100% / 0.95;

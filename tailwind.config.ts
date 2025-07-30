@@ -57,6 +57,10 @@ export default {
 					glass: 'hsl(var(--card-glass))',
 					'glass-heavy': 'hsl(var(--card-glass-heavy))'
 				},
+				popover: {
+					DEFAULT: 'hsl(var(--popover))',
+					foreground: 'hsl(var(--popover-foreground))'
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',

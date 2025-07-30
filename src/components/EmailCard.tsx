@@ -40,7 +40,7 @@ export const EmailCard = ({
   };
 
   return (
-    <Card className="glass-card p-6 hover-lift cursor-pointer group">
+    <Card className="glass-card p-6 hover-lift cursor-pointer group transition-all duration-300 hover:shadow-glow">
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3 flex-1">
           <div className="w-10 h-10 rounded-full bg-gradient-primary flex items-center justify-center">

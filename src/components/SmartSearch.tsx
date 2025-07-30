@@ -45,7 +45,7 @@ export const SmartSearch = () => {
       </div>
 
       {/* Search Input */}
-      <Card className="glass-card p-6 max-w-4xl mx-auto">
+      <Card className="glass-heavy p-6 max-w-4xl mx-auto">
         <div className="flex gap-3">
           <div className="relative flex-1">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-muted-foreground" />
@@ -96,7 +96,7 @@ export const SmartSearch = () => {
 
       {/* Search Results Placeholder */}
       {isSearching && (
-        <Card className="glass-card p-8 max-w-4xl mx-auto">
+        <Card className="glass-heavy p-8 max-w-4xl mx-auto">
           <div className="flex items-center justify-center space-x-4">
             <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-primary"></div>
             <div className="text-lg text-subtext">Analyzing your emails with AI...</div>
@@ -106,17 +106,17 @@ export const SmartSearch = () => {
 
       {/* AI Features Info */}
       <div className="max-w-4xl mx-auto grid md:grid-cols-3 gap-4">
-        <Card className="glass-card p-4 text-center">
+        <Card className="glass-card p-4 text-center hover-lift">
           <Brain className="w-8 h-8 text-primary mx-auto mb-2" />
           <h4 className="font-semibold text-foreground mb-1">Natural Language</h4>
           <p className="text-sm text-subtext">Search using everyday language</p>
         </Card>
-        <Card className="glass-card p-4 text-center">
+        <Card className="glass-card p-4 text-center hover-lift">
           <Sparkles className="w-8 h-8 text-primary mx-auto mb-2" />
           <h4 className="font-semibold text-foreground mb-1">AI-Powered</h4>
           <p className="text-sm text-subtext">Powered by advanced AI models</p>
         </Card>
-        <Card className="glass-card p-4 text-center">
+        <Card className="glass-card p-4 text-center hover-lift">
           <Zap className="w-8 h-8 text-primary mx-auto mb-2" />
           <h4 className="font-semibold text-foreground mb-1">Instant Results</h4>
           <p className="text-sm text-subtext">Get relevant emails in seconds</p>

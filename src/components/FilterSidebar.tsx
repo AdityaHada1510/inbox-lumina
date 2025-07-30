@@ -60,7 +60,7 @@ export const FilterSidebar = ({ onFilterChange }: FilterSidebarProps) => {
   const totalEmails = emailStats.reduce((sum, stat) => sum + stat.count, 0);
 
   return (
-    <div className="w-80 bg-sidebar-background border-r border-white/10 p-6 overflow-y-auto">
+    <div className="w-80 glass-sidebar p-6 overflow-y-auto">
       {/* Quick Stats */}
       <div className="mb-8">
         <div className="flex items-center gap-2 mb-4">
@@ -69,20 +69,20 @@ export const FilterSidebar = ({ onFilterChange }: FilterSidebarProps) => {
         </div>
         
         <div className="grid grid-cols-2 gap-3 mb-4">
-          <Card className="glass-card p-3 text-center">
-            <Mail className="w-6 h-6 text-primary mx-auto mb-1" />
-            <div className="text-xl font-bold text-foreground">{totalEmails}</div>
-            <div className="text-xs text-subtext">Total</div>
-          </Card>
-          <Card className="glass-card p-3 text-center">
-            <Star className="w-6 h-6 text-warning mx-auto mb-1" />
-            <div className="text-xl font-bold text-foreground">8</div>
-            <div className="text-xs text-subtext">Starred</div>
-          </Card>
+        <Card className="glass-heavy p-3 text-center hover-lift">
+          <Mail className="w-6 h-6 text-primary mx-auto mb-1" />
+          <div className="text-xl font-bold text-foreground">{totalEmails}</div>
+          <div className="text-xs text-subtext">Total</div>
+        </Card>
+        <Card className="glass-heavy p-3 text-center hover-lift">
+          <Star className="w-6 h-6 text-warning mx-auto mb-1" />
+          <div className="text-xl font-bold text-foreground">8</div>
+          <div className="text-xs text-subtext">Starred</div>
+        </Card>
         </div>
 
         {/* Simple Pie Chart Visualization */}
-        <Card className="glass-card p-4">
+        <Card className="glass-heavy p-4">
           <div className="flex items-center gap-2 mb-3">
             <PieChart className="w-4 h-4 text-primary" />
             <h3 className="font-medium text-sidebar-foreground">Categories</h3>

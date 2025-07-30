@@ -54,7 +54,8 @@ export default {
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))',
-					glass: 'hsl(var(--card-glass))'
+					glass: 'hsl(var(--card-glass))',
+					'glass-heavy': 'hsl(var(--card-glass-heavy))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
@@ -68,14 +69,17 @@ export default {
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-card': 'var(--gradient-card)',
+				'gradient-glass': 'var(--gradient-glass)',
 				'gradient-text': 'var(--gradient-text)'
 			},
 			boxShadow: {
 				'glass': 'var(--shadow-glass)',
+				'glass-heavy': 'var(--shadow-glass-heavy)',
 				'glow': 'var(--shadow-glow)'
 			},
 			backdropBlur: {
-				'glass': 'var(--backdrop-blur)'
+				'glass': 'var(--backdrop-blur)',
+				'glass-heavy': 'var(--backdrop-blur-heavy)'
 			},
 			transitionProperty: {
 				'glass': 'var(--transition-glass)'

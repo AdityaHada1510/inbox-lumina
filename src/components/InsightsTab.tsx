@@ -64,7 +64,7 @@ export const InsightsTab = () => {
         {insights.map((insight, index) => {
           const Icon = insight.icon;
           return (
-            <Card key={index} className="glass-card p-6 hover-lift">
+            <Card key={index} className="glass-card p-6 hover-lift transition-all duration-300 hover:shadow-glow">
               <div className="flex items-start justify-between">
                 <div className="space-y-2">
                   <Icon className={`w-6 h-6 ${insight.color}`} />
@@ -81,7 +81,7 @@ export const InsightsTab = () => {
       </div>
 
       {/* Weekly Activity Chart */}
-      <Card className="glass-card p-6">
+      <Card className="glass-heavy p-6">
         <div className="flex items-center gap-2 mb-6">
           <Calendar className="w-5 h-5 text-primary" />
           <h3 className="text-xl font-semibold text-foreground">Weekly Activity</h3>
@@ -130,7 +130,7 @@ export const InsightsTab = () => {
       </Card>
 
       {/* AI Recommendations */}
-      <Card className="glass-card p-6">
+      <Card className="glass-heavy p-6">
         <h3 className="text-xl font-semibold text-foreground mb-4">AI Recommendations</h3>
         <div className="space-y-4">
           <div className="flex items-start gap-3 p-4 rounded-lg bg-success/10 border border-success/20">

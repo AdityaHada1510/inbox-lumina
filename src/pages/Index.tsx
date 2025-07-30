@@ -80,10 +80,10 @@ const Index = () => {
   return (
     <div 
       className="min-h-screen bg-cover bg-center bg-fixed"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
+      style={{ backgroundImage: `url(/lovable-uploads/81f7e427-94a0-4fe4-b7f0-cd1ec8228b2f.png)` }}
     >
       {/* Overlay for better text readability */}
-      <div className="min-h-screen bg-background/80 backdrop-blur-sm">
+      <div className="min-h-screen bg-background/60 backdrop-blur-sm">
         <div className="flex">
           {/* Sidebar */}
           <FilterSidebar onFilterChange={handleFilterChange} />
@@ -122,7 +122,7 @@ const Index = () => {
 
             {/* Tabs */}
             <Tabs defaultValue="emails" className="space-y-6">
-              <TabsList className="glass-card h-12">
+              <TabsList className="glass-heavy h-12 p-1">
                 <TabsTrigger value="emails" className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
                   All Emails

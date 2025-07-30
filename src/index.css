@@ -12,15 +12,16 @@
     --background: 224 24% 6%;
     --foreground: 0 0% 100%;
 
-    /* Glassmorphic Card Backgrounds */
-    --card: 0 0% 100% / 0.04;
-    --card-foreground: 0 0% 100% / 0.8;
-    --card-glass: 0 0% 100% / 0.06;
+    /* Glassmorphic Card Backgrounds with enhanced transparency */
+    --card: 0 0% 100% / 0.05;
+    --card-foreground: 0 0% 100% / 0.9;
+    --card-glass: 0 0% 100% / 0.08;
+    --card-glass-heavy: 0 0% 100% / 0.12;
 
-    /* Sidebar Dark Theme */
-    --sidebar-background: 225 30% 9%;
-    --sidebar-foreground: 0 0% 100% / 0.9;
-    --sidebar-card: 0 0% 100% / 0.05;
+    /* Enhanced Sidebar Dark Theme with glass effect */
+    --sidebar-background: 0 0% 100% / 0.06;
+    --sidebar-foreground: 0 0% 100% / 0.95;
+    --sidebar-card: 0 0% 100% / 0.08;
 
     /* Purple-Blue Gradient Primary */
     --primary: 248 75% 70%;
@@ -52,15 +53,18 @@
     --success: 142 71% 45%;
     --warning: 38 92% 50%;
 
-    /* Gradients */
+    /* Gradients with enhanced glass effects */
     --gradient-primary: linear-gradient(to right, hsl(248 75% 70%), hsl(190 100% 70%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.04), hsl(0 0% 100% / 0.02));
+    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.08), hsl(0 0% 100% / 0.03));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.15), hsl(0 0% 100% / 0.05));
     --gradient-text: linear-gradient(to right, hsl(248 75% 70%), hsl(190 100% 70%));
 
-    /* Shadows & Effects */
-    --shadow-glass: 0 8px 32px 0 hsl(0 0% 0% / 0.3);
-    --shadow-glow: 0 0 40px hsl(248 75% 70% / 0.3);
-    --backdrop-blur: blur(16px);
+    /* Enhanced Shadows & Effects */
+    --shadow-glass: 0 8px 32px 0 hsl(0 0% 0% / 0.4);
+    --shadow-glass-heavy: 0 12px 40px 0 hsl(0 0% 0% / 0.5);
+    --shadow-glow: 0 0 40px hsl(248 75% 70% / 0.4);
+    --backdrop-blur: blur(20px);
+    --backdrop-blur-heavy: blur(32px);
 
     /* Animations */
     --transition-smooth: all 0.2s ease-in-out;
@@ -82,11 +86,20 @@
 
   /* Glass morphism utility classes */
   .glass-card {
-    @apply bg-card-glass backdrop-blur-lg border border-white/10 shadow-glass;
+    @apply bg-card-glass backdrop-blur-[20px] border border-white/15 shadow-glass;
   }
 
   .glass-input {
-    @apply bg-input border border-white/20 text-input-foreground placeholder:text-muted-foreground;
+    @apply bg-input border border-white/25 text-input-foreground placeholder:text-muted-foreground backdrop-blur-[16px];
+  }
+
+  /* Enhanced glass effects */
+  .glass-heavy {
+    @apply bg-card-glass-heavy backdrop-blur-[32px] border border-white/20 shadow-glass-heavy;
+  }
+
+  .glass-sidebar {
+    @apply bg-sidebar-background backdrop-blur-[24px] border-r border-white/15;
   }
 
   /* Gradient text utility */

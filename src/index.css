@@ -99,7 +99,7 @@
   }
 
   .glass-sidebar {
-    @apply bg-sidebar-background backdrop-blur-[24px] border-r border-white/15;
+    @apply bg-sidebar backdrop-blur-[24px] border-r border-white/15;
   }
 
   /* Gradient text utility */
